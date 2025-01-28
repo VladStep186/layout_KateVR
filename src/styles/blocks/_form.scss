@@ -58,7 +58,7 @@
       border-bottom: 1px solid $c-dark-gray;
     }
 
-    &:invalid:not(:focus):placeholder-shown {
+    &:invalid:not(:focus):not(:placeholder-shown) {
       border-bottom: 1px solid rgba(134, 4, 4, 1);
     }
   }
@@ -83,7 +83,7 @@
       color: $c-accent;
     }
 
-    &:has(+ .form__input:invalid:not(:focus):placeholder-shown) {
+    &:has(+ .form__input:invalid:not(:focus):not(:placeholder-shown)){
       color: rgba(134, 4, 4, 1);
     }
   }
