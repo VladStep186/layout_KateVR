@@ -66,22 +66,13 @@ input {
   outline: none;
 }
 
-input:-webkit-autofill {
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
   background-color: transparent !important;
-}
-
-input:valid {
-  background-color: transparent !important;
-  outline: none;
-}
-
-input:focus:-webkit-autofill {
-  background-color: transparent !important;
-  outline: none;
-}
-
-input::placeholder {
-  background-color: transparent !important;
+  color: $c-text !important;
+  -webkit-text-fill-color: $c-text !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 ul {

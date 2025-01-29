@@ -54,10 +54,6 @@
       border-bottom: 1px solid $c-accent;
     }
 
-    &:required:placeholder-shown {
-      border-bottom: 1px solid $c-dark-gray;
-    }
-
     &:invalid:not(:focus, :placeholder-shown) {
       border-bottom: 1px solid rgba(134, 4, 4, 1);
     }
@@ -81,10 +77,6 @@
 
     &:has(+ .form__input:focus) {
       color: $c-accent;
-    }
-
-    &:has(+ .form__input:invalid:not(:focus, :placeholder-shown)) {
-      color: rgba(134, 4, 4, 1);
     }
   }
 
@@ -114,6 +106,10 @@
     &:has(select:valid) .form__subtitle {
       color: $c-accent;
     }
+  }
+
+  &__subtitle:has(+ .form__input:invalid:not(:focus, :placeholder-shown)) {
+    color: rgba(134, 4, 4, 1);
   }
 
   &__select-list {
