@@ -57,6 +57,10 @@ li {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -73,8 +77,4 @@ select:-webkit-autofill {
   color: $c-text !important;
   -webkit-text-fill-color: $c-text !important;
   transition: background-color 5000s ease-in-out 0s;
-}
-
-ul {
-  list-style: none;
 }
